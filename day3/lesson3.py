@@ -24,3 +24,6 @@ print(sisterage)
 myage = 17
 print(myage)
 
+payment_status = "returned"
+payment_status = "paid"
+print(payment_status)
