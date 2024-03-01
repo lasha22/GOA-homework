@@ -1,3 +1,3 @@
 #ერთიდან ათამდე ლუწი რიცხვები
-for i in range(10):
+for i in range(0,10 + 1,2):
     print(i)
