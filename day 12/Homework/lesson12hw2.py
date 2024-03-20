@@ -8,7 +8,7 @@ number = int(input("Please enter a negative number: "))
 
 # Add all negative numbers from the input number to 0 to the list
 for i in range(number, 0):
-    negative_numbers.append(i)
+    print
 
 # Print the list of negative numbers
 print("List of negative numbers:", negative_numbers)

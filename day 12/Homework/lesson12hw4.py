@@ -12,7 +12,7 @@ print("Every other movie:", favorite_movies[::2])
 print("negative indices for slicing: ")
 # Using negative indices for slicing
 print("First three movies:", favorite_movies[:-2])
-print("Movies from index 1 to 4:", favorite_movies[1:])
+print("Movies from index 1 to 4:", favorite_movies[-4:])
 print("Last two movies:", favorite_movies[-2:])
-print("Every other movie:", favorite_movies[1::2])
+print("Every other movie:", favorite_movies[-4::-3])
 
