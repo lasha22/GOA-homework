@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.item:nth-child(1) {
+    background-color: #FF6347; 
+}
+
+.item:nth-child(2) {
+    background-color: #98FB98; 
+}
+
+.item:nth-child(3) {
+    background-color: #87CEFA; 
+}
+
+.item:nth-child(4) {
+    background-color: #FFD700; 
+}
+
+.item:nth-child(5) {
+    background-color: #FFA07A; 
+}

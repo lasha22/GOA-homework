@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .flex-container {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 300px; 
+    padding: 10px;
+  }
+  
+  .flex-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .space-around {
+    justify-content: space-around;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  }
+  
+  .center {
+    justify-content: center;
+  }
+  
