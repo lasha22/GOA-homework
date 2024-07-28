@@ -1,0 +1,1 @@
+print("davaleva ar mouciat radgan gakvEtilze gavakeTet ragaceebi")
