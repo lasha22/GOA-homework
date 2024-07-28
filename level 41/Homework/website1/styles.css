@@ -5,16 +5,16 @@
 }
 
 .image-div {
-    width: 400px; /* Adjusted width */
-    height: 300px; /* Adjusted height */
-    margin: 50px 20px; /* Reduced margin between elements */
+    width: 400px; 
+    height: 300px; 
+    margin: 50px 20px; 
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: -3px 3px 15px rgb(145, 142, 142);
-    display: inline-block; /* Display as inline-block to arrange them horizontally */
-    vertical-align: top; /* Align them to the top of the line */
+    display: inline-block; 
+    vertical-align: top; 
 }
 
 
@@ -33,12 +33,6 @@
 .korea {
     background-image: url('https://plus.unsplash.com/premium_photo-1661948404806-391a240d6d40?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
-
-
-
-
-
-
 
 
 
