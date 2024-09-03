@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+    შექმენით ფორმა რომელშიც მომხმარებელი შემოიტანს თავის სახელს, 
+    ემაილს და სასურველ მესიჯს (დაგჭრდებათ rows,cols) javascript-ის 
+    საშვალებით შეზღუდეთ მესიჯის ზომა რომ მომხმარებელმა ვერ შეძლოს 
+    200 ასოზე მეტის შემოტანა, ასევე დაამატეთ მესიჯის ქვევით div ბლოკი 
+    რომელშიც მომხმარებელი დაინახავს თუ რამდენი სიმბოლო აქვს გამოყენებული 200-იდან
+    
+    -->
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Enter your name"><br>
+        <input type="email" placeholder="Please enter your email"><br>
+        <form action="message">Message</form>
+        <textarea name="" id="message" rows="10" cols="60">
+
+        </textarea>
+        <div>
+            <p id="count"></p>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
