@@ -1,0 +1,1 @@
+print("ertad vaketebdit")
