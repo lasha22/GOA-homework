@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#loader-container {
+    position: relative;
+    width: 200px; /* Width of the container */
+    height: 50px; /* Height of the container */
+    overflow: hidden;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+#box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+
+
+
+
+const person = { name: 'Alice', age: 25, city: 'New York' };
+
+const { name, age } = person;
+console.log(name); 
+console.log(age);  
+
+
+
+
+
+const fruits = ['apple'];
+
+const [firstFruit, secondFruit = 'banana'] = fruits;
+console.log(firstFruit);  
+console.log(secondFruit); 
+
+
+
+const user = { id: 101, username: 'john_doe' };
+
+const { id: userId, username: userName } = user;
+console.log(userId);   
+console.log(userName); 
+
+
