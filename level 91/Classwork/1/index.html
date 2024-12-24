@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bookstore</h1>
+        <nav>
+            <a href="#store">Store</a>
+            <a href="#collection">Personal Collection</a>
+        </nav>
+    </header>
+
+    <section id="store">
+        <h2>Store</h2>
+        <div class="filters">
+            
+            <input type="text" id="search" placeholder="Search by title or author" oninput="filterBooks()">
+            
+            <select id="genreFilter" onchange="filterBooks()">
+                <option value="">All genres</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedy">Comedy</option>
+            </select>
+            
+            <input type="range" id="priceFilter" min="0" max="100" step="1" onchange="filterBooks()">
+        </div>
+
+        <div id="bookList" class="book-list">
+           
+        </div>
+    </section>
+
+    <section id="collection">
+        <h2>Personal Collection</h2>
+        <div class="filters">
+            
+            <input type="text" id="searchCollection" placeholder="Search by title or author" oninput="filterCollection()">
+        </div>
+
+        <div id="collectionList" class="book-list">
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
