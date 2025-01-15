@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shapes with CSS</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .shape-container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      flex-wrap: wrap;
+    }
+
+    .rectangle, .rounded-rectangle, .triangle, .pentagon, .ellipse, .star, .moon, .heart {
+      margin: 10px;
+    }
+
+    .rectangle {
+      width: 200px;
+      height: 100px;
+      background-color: #3498db;
+    }
+
+    .rounded-rectangle {
+      width: 200px;
+      height: 100px;
+      background-color: #2ecc71;
+      border-radius: 15px;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid #e74c3c;
+    }
+
+    .pentagon {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid #f39c12;
+      position: relative;
+      top: -50px;
+      left: -50px;
+      transform: rotate(36deg);
+    }
+    .pentagon:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: -50px;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 50px solid #f39c12;
+    }
+
+    .ellipse {
+      width: 200px;
+      height: 100px;
+      background-color: #9b59b6;
+      border-radius: 50%;
+    }
+
+    .star {
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+      position: relative;
+      transform: rotate(45deg);
+    }
+    .star:before, .star:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #f1c40f;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    .moon {
+      width: 150px;
+      height: 150px;
+      background-color: #f39c12;
+      border-radius: 50%;
+      position: relative;
+    }
+    .moon:after {
+      content: '';
+      width: 120px;
+      height: 120px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+
+    .heart {
+      width: 100px;
+      height: 100px;
+      background-color: #e74c3c;
+      position: relative;
+      transform: rotate(-45deg);
+    }
+    .heart:before, .heart:after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: #e74c3c;
+      border-radius: 50%;
+    }
+    .heart:before {
+      left: 0;
+    }
+    .heart:after {
+      top: -50px;
+      left: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="shape-container">
+    <div class="rectangle"></div>
+    <div class="rounded-rectangle"></div>
+    <div class="triangle"></div>
+    <div class="pentagon"></div>
+    <div class="ellipse"></div>
+    <div class="star"></div>
+    <div class="moon"></div>
+    <div class="heart"></div>
+  </div>
+</body>
+</html>

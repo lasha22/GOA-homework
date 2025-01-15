@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Form</title>
+</head>
+<body>
+    <h1>User Data Form</h1>
+    <form id="userForm">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" required><br><br>
+        
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" required><br><br>
+
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" required><br><br>
+
+        <label for="height">Height (cm):</label><br>
+        <input type="number" id="height" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>User Information</h2>
+    <div id="userData"></div>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const age = document.getElementById('age').value;
+            const id = document.getElementById('id').value;
+            const height = document.getElementById('height').value;
+            const description = document.getElementById('description').value;
+
+            const email = `${firstName}.${lastName}${age}@example.com`.toLowerCase();
+
+            const userInfo = `
+                <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+                <p><strong>Age:</strong> ${age}</p>
+                <p><strong>ID:</strong> ${id}</p>
+                <p><strong>Height:</strong> ${height} cm</p>
+                <p><strong>Description:</strong> ${description}</p>
+                <p><strong>Email:</strong> ${email}</p>
+            `;
+
+            document.getElementById('userData').innerHTML = userInfo;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nameForm" class="container">
+        <h1>Enter your name:</h1>
+        <input type="text" id="userName" placeholder="Your name" />
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="gameSection" class="container">
+        <h1>Welcome, <span id="userDisplayName"></span>!</h1>
+        <label for="colorPicker">Pick a background color:</label><br>
+        <input type="color" id="colorPicker" onchange="changeBackgroundColor()" />
+        <p class="message">Your current score: <span id="userScore">0</span></p>
+
+        <div>
+            <label for="guessNumber">Guess a number between <span id="rangeStart"></span> and <span id="rangeEnd"></span>:</label><br>
+            <input type="number" id="guessNumber" placeholder="Enter number" />
+            <button onclick="checkGuess()">Submit Guess</button>
+        </div>
+
+        <p id="hintMessage" class="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
